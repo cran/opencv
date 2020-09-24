@@ -21,8 +21,11 @@
 #' faces <- ocv_face(mona)
 #'
 #' # To show locations of faces
-#' #facemask <- ocv_facemask(mona)
-#' #attr(facemask, 'faces')
+#' facemask <- ocv_facemask(mona)
+#' attr(facemask, 'faces')
+#'
+#' # This is not strictly needed
+#' ocv_destroy(mona)
 ocv_read <- function(path){
   if(grepl("https?://", path)){
     base <- basename(path)
@@ -36,10 +39,16 @@ ocv_read <- function(path){
 
 #' @export
 #' @rdname opencv
-#' @param image a ocv image object
+#' @param image an ocv image object
 ocv_write <- function(image, path){
   path <- normalizePath(path, mustWork = FALSE)
   cvmat_write(image, path)
+}
+
+#' @export
+#' @rdname opencv
+ocv_destroy <- function(image){
+  cvmat_destroy(image)
 }
 
 #' @export
@@ -128,7 +137,10 @@ ocv_markers <- function(image){
 #' @export
 #' @rdname opencv
 ocv_info <- function(image){
-  cvmat_info(image)
+  info <- cvmat_info(image)
+  info$type  <- enum_label("type", info$type)
+  info$depth <- enum_label("depth", info$depth)
+  info
 }
 
 #' @export
@@ -160,6 +172,19 @@ ocv_video <- function(filter){
       stop("Output must be opencv-image")
     return(out)
   })
+}
+
+
+#' @export
+#' @rdname opencv
+ocv_grayscale <- function(image){
+  cvmat_grayscale(image)
+}
+
+#' @export
+#' @rdname opencv
+ocv_version <- function(){
+  cvversion()
 }
 
 #' @importFrom magrittr %>%

@@ -26,11 +26,18 @@ XPtrMat cvmat_xptr(cv::Mat orig){
 
 //opencv has internal refcount system
 cv::Mat get_mat(XPtrMat image){
-  if(!Rf_inherits(image, "opencv-image"))
+  if(!image.inherits("opencv-image"))
     throw std::runtime_error("Image is not a opencv-image object");
   if(image.get() == NULL)
-    throw std::runtime_error("Image is dead");
+    throw std::runtime_error("Image has been destroyed");
   return * image.get();
+}
+
+// [[Rcpp::export]]
+void cvmat_destroy(XPtrMat image){
+  if(!image.inherits("opencv-image"))
+    throw std::runtime_error("Image is not a opencv-image object");
+  image.release();
 }
 
 // [[Rcpp::export]]
@@ -99,6 +106,29 @@ XPtrMat cvmat_resize(XPtrMat ptr, int width = 0, int height = 0){
 }
 
 // [[Rcpp::export]]
+XPtrMat cvmat_raw_bgr(Rcpp::RawVector image, int width = 0, int height = 0){
+  // 8bit Blue Green Red
+  if(image.length() != width * height * 3){
+    throw std::runtime_error("cvmat_raw_bgr requires data with 3 channels");
+  }
+  std::vector<uchar> x = Rcpp::as<std::vector<uchar>>(image);
+  cv::Mat output(height, width, CV_8UC3, x.data());
+  return cvmat_xptr(output);
+}
+
+
+// [[Rcpp::export]]
+XPtrMat cvmat_raw_bw(Rcpp::RawVector image, int width = 0, int height = 0){
+  // 8bit 1 channel (e.g. Black/White or Greyscale)
+  if(image.length() != width * height * 1){
+    throw std::runtime_error("cvmat_raw_bw requires data with 1 channel (e.g. grey or just black/white)");
+  }
+  std::vector<uchar> x = Rcpp::as<std::vector<uchar>>(image);
+  cv::Mat output(height, width, CV_8U, x.data());
+  return cvmat_xptr(output);
+}
+
+// [[Rcpp::export]]
 Rcpp::RawVector cvmat_bitmap(XPtrMat ptr){
   cv::Mat output;
   cv::Mat input = get_mat(ptr);
@@ -123,7 +153,9 @@ Rcpp::List cvmat_info(XPtrMat image){
   return Rcpp::List::create(
     Rcpp::_["width"] = get_mat(image).cols,
     Rcpp::_["height"] = get_mat(image).rows,
-    Rcpp::_["channels"] = get_mat(image).channels()
+    Rcpp::_["channels"] = get_mat(image).channels(),
+    Rcpp::_["depth"] = get_mat(image).depth(),
+    Rcpp::_["type"] = get_mat(image).type()
   );
 }
 
@@ -170,4 +202,11 @@ Rcpp::String data_prefix(){
   return Rcpp::String(xstr(_DATA_PREFIX));
 #endif
   return Rcpp::String("/usr");
+}
+
+// [[Rcpp::export]]
+int set_num_threads(int n = 0){
+  if(n > 0)
+    setNumThreads(n);
+  return getNumThreads();
 }

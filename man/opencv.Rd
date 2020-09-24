@@ -5,6 +5,7 @@
 \alias{ocv_facemask}
 \alias{ocv_read}
 \alias{ocv_write}
+\alias{ocv_destroy}
 \alias{ocv_bitmap}
 \alias{ocv_edges}
 \alias{ocv_picture}
@@ -20,6 +21,8 @@
 \alias{ocv_copyto}
 \alias{ocv_display}
 \alias{ocv_video}
+\alias{ocv_grayscale}
+\alias{ocv_version}
 \title{OpenCV Computer Vision}
 \usage{
 ocv_face(image)
@@ -29,6 +32,8 @@ ocv_facemask(image)
 ocv_read(path)
 
 ocv_write(image, path)
+
+ocv_destroy(image)
 
 ocv_bitmap(image)
 
@@ -59,9 +64,13 @@ ocv_copyto(image, target, mask)
 ocv_display(image)
 
 ocv_video(filter)
+
+ocv_grayscale(image)
+
+ocv_version()
 }
 \arguments{
-\item{image}{a ocv image object}
+\item{image}{an ocv image object}
 
 \item{path}{image file such as png or jpeg}
 
@@ -97,6 +106,9 @@ ocv_markers(mona)
 faces <- ocv_face(mona)
 
 # To show locations of faces
-#facemask <- ocv_facemask(mona)
-#attr(facemask, 'faces')
+facemask <- ocv_facemask(mona)
+attr(facemask, 'faces')
+
+# This is not strictly needed
+ocv_destroy(mona)
 }

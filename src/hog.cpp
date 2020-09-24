@@ -20,11 +20,12 @@ XPtrMat cvmat_hog(XPtrMat ptr){
     Rect r = found[i];
     size_t j;
     // Do not add small detections inside a bigger detection.
-    for ( j = 0; j < found.size(); j++ )
+    for ( j = 0; j < found.size(); j++ ){
       if ( j != i && (r & found[j]) == r )
         break;
       if ( j == found.size() )
         found_filtered.push_back(r);
+    }
   }
   for (size_t i = 0; i < found_filtered.size(); i++)
   {
@@ -35,7 +36,8 @@ XPtrMat cvmat_hog(XPtrMat ptr){
     r.width = cvRound(r.width*0.8);
     r.y += cvRound(r.height*0.07);
     r.height = cvRound(r.height*0.8);
-    rectangle(get_mat(ptr), r.tl(), r.br(), cv::Scalar(0,255,0), 3);
+    Mat img = get_mat(ptr);
+    rectangle(img, r.tl(), r.br(), cv::Scalar(0,255,0), 3);
   }
   return ptr;
 }
