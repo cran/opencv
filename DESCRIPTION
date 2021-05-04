@@ -1,7 +1,7 @@
 Package: opencv
 Type: Package
 Title: Bindings to 'OpenCV' Computer Vision Library
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: c(
     person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroen@berkeley.edu", 
       comment = c(ORCID = "0000-0002-4035-0289")),
@@ -19,13 +19,12 @@ BugReports: https://github.com/ropensci/opencv/issues
 LinkingTo: Rcpp
 Imports: Rcpp, magrittr
 Suggests: grDevices
-LazyData: true
 Encoding: UTF-8
 RoxygenNote: 7.1.1
 NeedsCompilation: yes
-Packaged: 2020-09-24 21:16:16 UTC; jeroen
+Packaged: 2021-05-04 13:19:05 UTC; jeroen
 Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),
   Jan Wijffels [aut]
 Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
 Repository: CRAN
-Date/Publication: 2020-09-24 21:50:02 UTC
+Date/Publication: 2021-05-04 13:50:02 UTC
