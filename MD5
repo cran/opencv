@@ -1,7 +1,7 @@
-90ee8d9193302447db54e87dc94bbb76 *DESCRIPTION
+5e2c18406e5e323a9d73926022406dce *DESCRIPTION
 f35c1dd7a6e913e967bd6e03dd8a3c18 *LICENSE
 adb12283675359e9c10e269621f0088e *NAMESPACE
-c7b26cf2c93447b9f9661828541b55aa *NEWS
+3be50cacb05a5d3ca25b29e0f5b7df8e *NEWS
 20d1fabe794a2535a494d21103d5df5f *R/RcppExports.R
 a91f3281d08cad33f2db8b3b11b40fbc *R/areas.R
 deef922d503e959c6d01590d192915f5 *R/face.R
@@ -10,8 +10,8 @@ c1efca148f9c376ea83fcc84a1849d84 *R/keypoints.R
 006ad0631270f85022045a523b1a81a2 *R/opencv.R
 416fe223c632f75619473cac00765eba *R/utils.R
 a1a1bea310fa014d990bf063951628fd *R/xmldata.R
-bc7baead3b6080f04dc81efd2fe1ff39 *cleanup
-725f8cb96c71fd70762782a8d413ce47 *configure
+4ce1fcf8d4a4b68aac58e1c00c2db6d0 *cleanup
+4edb6c1a671a0e57d934cb0880bd6ae7 *configure
 6c06f325975b663f33acaf96acfb314d *man/ocv_keypoints.Rd
 070a39458934bda965fcc3827cab59d6 *man/opencv-area.Rd
 6b967e967f99ac340e8d3b5aae8a7d06 *man/opencv.Rd
@@ -19,7 +19,7 @@ bc7baead3b6080f04dc81efd2fe1ff39 *cleanup
 1d5dbe8533b956d14c719335edc0efc7 *src/Makevars.in
 2cec33791efd347cbcb051402d7cf9c4 *src/Makevars.ucrt
 5ac8fe02587250fc3adadf2a17e32d47 *src/Makevars.win
-fb8862d6b3a88dec926fc0a7e4172c56 *src/RcppExports.cpp
+6714b9cc86eb7ee9210850c1a4e8fc83 *src/RcppExports.cpp
 835e2494fd178bb0798f69f600378fd9 *src/areas.cpp
 3505b3422508ddaabde8ae10b4a99b20 *src/base.cpp
 4164b3860a2fc6f7ca4760a1bd41685f *src/color.cpp
