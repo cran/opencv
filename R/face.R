@@ -12,3 +12,4 @@ ocv_facemask <- function(image){
   facedata <- find_data_xml('haarcascades/haarcascade_frontalface_alt.xml')
   cvmat_facemask(image, facedata)
 }
+

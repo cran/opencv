@@ -81,8 +81,8 @@ cvmat_display <- function(ptr) {
     invisible(.Call('_opencv_cvmat_display', PACKAGE = 'opencv', ptr))
 }
 
-livestream <- function(filter) {
-    invisible(.Call('_opencv_livestream', PACKAGE = 'opencv', filter))
+livestream <- function(filter, stop_on_result = FALSE) {
+    .Call('_opencv_livestream', PACKAGE = 'opencv', filter, stop_on_result)
 }
 
 data_prefix <- function() {
@@ -151,6 +151,14 @@ cvmat_hog <- function(ptr) {
 
 cvmat_markers <- function(ptr) {
     .Call('_opencv_cvmat_markers', PACKAGE = 'opencv', ptr)
+}
+
+cvmat_qrtext <- function(ptr) {
+    .Call('_opencv_cvmat_qrtext', PACKAGE = 'opencv', ptr)
+}
+
+cvmat_qrmask <- function(ptr) {
+    .Call('_opencv_cvmat_qrmask', PACKAGE = 'opencv', ptr)
 }
 
 cvversion <- function() {
