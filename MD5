@@ -1,4 +1,4 @@
-56e4ba7afa96f23dddb1c714e988de64 *DESCRIPTION
+5e7dbd2a98bec6e16d7aa73b198823bf *DESCRIPTION
 c3a98f95aadeb3c3f93a4a433b0f9980 *LICENSE
 0f96f2daff683e3c8e3538317394bc41 *NAMESPACE
 233488b0182fc7ae58ca4b8a7749dc87 *NEWS
@@ -19,8 +19,8 @@ c1efca148f9c376ea83fcc84a1849d84 *R/keypoints.R
 08c3b84e9be88085b372e969c80a9ba5 *man/opencv.Rd
 cad7ac791b54726fa21771757052982b *man/qrcode.Rd
 72564e6e19c348a3501cb5d6e5c7d4d1 *man/reexports.Rd
-1170b68503e839c3cf89c6e490c8af3e *src/Makevars.in
-4a3cdd0f33a135dec88a18c2f48604ce *src/Makevars.win
+111e1efb50ff675feb507ea42a24b300 *src/Makevars.in
+ec596498802294aa2a09eee8950e1e86 *src/Makevars.win
 45f0a831a548faeeb0f94e4d0ed5b3dc *src/RcppExports.cpp
 835e2494fd178bb0798f69f600378fd9 *src/areas.cpp
 d0c5c95c276e4fc1f86e0ab5514cabbf *src/base.cpp
