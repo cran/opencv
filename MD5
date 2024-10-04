@@ -1,4 +1,4 @@
-fec11be36e7313ff3d71f51ff86e089e *DESCRIPTION
+eb4f25da8a6d9d4986fdf6bcf5e713f1 *DESCRIPTION
 c3a98f95aadeb3c3f93a4a433b0f9980 *LICENSE
 dfa9d8e809e3823574fefd8837df86c4 *NAMESPACE
 a924c4918d1ddcadcdeaa6fe9a126332 *NEWS
@@ -30,13 +30,13 @@ f3f1043d015bce02e2270d34081cfebc *src/effects.cpp
 cd8f86a115e769896d4010c71e4e0871 *src/face.cpp
 5e9e71ddcbeea3d8d15a0166ed662635 *src/features.cpp
 42874966cd210b5d2e06338d512fc4be *src/hog.cpp
-e2d61536230dd2ffd780489090ee579e *src/opencv_types.h
+bb8517d140ef25e4bfe8de72e60e2feb *src/opencv_types.h
 96d2cc2a78c1a30c74a5dde1be5fda7e *src/points.cpp
-48a4a8aae2ed51547bd5cfc8dfca6d1e *src/qrdetect.cpp
+1bfe7afa9d2a3c1e0dde17acea39ea03 *src/qrdetect.cpp
 b03881651ac85acf10aab520fab72930 *src/util.cpp
 87bd6834e27e426a3ebb7ebf0a7d58ff *src/util.hpp
 ddaa9f19c78c2f2fa7c687d32820b700 *src/version.cpp
 ac15e24ba1712b1a2fc4fd4200001be0 *tests/testthat.R
 a3d5566fc7244a5e0b0172014d8a9c01 *tests/testthat/qrtest.jpg
-cc1e44f3e6da1d42f38b15d717fc832f *tests/testthat/test-qr_code.R
+67b23d0ca6582b8137415902812181c8 *tests/testthat/test-qr_code.R
 59ba87a0451abc9b8a3a08130762d3cd *tools/winlibs.R

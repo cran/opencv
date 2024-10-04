@@ -1,9 +1,9 @@
 Package: opencv
 Type: Package
 Title: Bindings to 'OpenCV' Computer Vision Library
-Version: 0.4.0
+Version: 0.4.1
 Authors@R: c(
-    person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroen@berkeley.edu", 
+    person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroenooms@gmail.com", 
       comment = c(ORCID = "0000-0002-4035-0289")),
     person('Jan', 'Wijffels', role = 'aut'))
 Description: Exposes some of the available 'OpenCV' <https://opencv.org/> algorithms,
@@ -13,7 +13,8 @@ License: MIT + file LICENSE
 SystemRequirements: OpenCV 3 or newer: libopencv-dev (Debian, Ubuntu)
         or opencv-devel (Fedora). The QR code detector requires at
         least libopencv 4.5.2.
-URL: https://ropensci.r-universe.dev/opencv
+URL: https://docs.ropensci.org/opencv/
+        https://ropensci.r-universe.dev/opencv
 BugReports: https://github.com/ropensci/opencv/issues
 LinkingTo: Rcpp
 Imports: Rcpp, magrittr
@@ -22,9 +23,9 @@ Encoding: UTF-8
 RoxygenNote: 7.2.3
 Config/testthat/edition: 3
 NeedsCompilation: yes
-Packaged: 2023-10-29 13:42:29 UTC; jeroen
+Packaged: 2024-10-03 14:13:04 UTC; jeroen
 Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),
   Jan Wijffels [aut]
-Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Maintainer: Jeroen Ooms <jeroenooms@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-10-29 14:00:02 UTC
+Date/Publication: 2024-10-04 08:50:02 UTC
