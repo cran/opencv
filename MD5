@@ -1,7 +1,7 @@
-eb4f25da8a6d9d4986fdf6bcf5e713f1 *DESCRIPTION
+00313aa3f054b6d5117c60516e032f10 *DESCRIPTION
 c3a98f95aadeb3c3f93a4a433b0f9980 *LICENSE
 dfa9d8e809e3823574fefd8837df86c4 *NAMESPACE
-a924c4918d1ddcadcdeaa6fe9a126332 *NEWS
+e68347c2afd794f9feb0bc281c3dd09e *NEWS
 7f0f3eb80349dfb1b969b97e727cb425 *R/RcppExports.R
 a91f3281d08cad33f2db8b3b11b40fbc *R/areas.R
 45d6eb5024163465b669ee9bdfa3b498 *R/face.R
@@ -20,7 +20,7 @@ a63e82428b6e338c160125f92a643335 *man/opencv.Rd
 c93aa3f90f881bffa761cffaf248bec1 *man/qrcode.Rd
 72564e6e19c348a3501cb5d6e5c7d4d1 *man/reexports.Rd
 111e1efb50ff675feb507ea42a24b300 *src/Makevars.in
-0c07f6e53cfb5a4005ad3d268eec43f0 *src/Makevars.win
+0c6f3e998917f8ebd1d386bca6f0b079 *src/Makevars.win
 2ab428bd47ef1baf46010978493d0d82 *src/RcppExports.cpp
 835e2494fd178bb0798f69f600378fd9 *src/areas.cpp
 9b0bafe8b25245c4c083bbb1e97ca236 *src/base.cpp
