@@ -1,4 +1,4 @@
-00313aa3f054b6d5117c60516e032f10 *DESCRIPTION
+1b6b4d3c2632d19c39831d93346b896f *DESCRIPTION
 c3a98f95aadeb3c3f93a4a433b0f9980 *LICENSE
 dfa9d8e809e3823574fefd8837df86c4 *NAMESPACE
 e68347c2afd794f9feb0bc281c3dd09e *NEWS
@@ -19,8 +19,8 @@ dc7c4b70843c6b2055e04b22dca675a5 *R/qr.R
 a63e82428b6e338c160125f92a643335 *man/opencv.Rd
 c93aa3f90f881bffa761cffaf248bec1 *man/qrcode.Rd
 72564e6e19c348a3501cb5d6e5c7d4d1 *man/reexports.Rd
-111e1efb50ff675feb507ea42a24b300 *src/Makevars.in
-0c6f3e998917f8ebd1d386bca6f0b079 *src/Makevars.win
+7357e2b20edad1208e37090ec02a8331 *src/Makevars.in
+dec0ecc896dcdc509d055f891d05d1e7 *src/Makevars.win
 2ab428bd47ef1baf46010978493d0d82 *src/RcppExports.cpp
 835e2494fd178bb0798f69f600378fd9 *src/areas.cpp
 9b0bafe8b25245c4c083bbb1e97ca236 *src/base.cpp
@@ -39,4 +39,4 @@ ddaa9f19c78c2f2fa7c687d32820b700 *src/version.cpp
 ac15e24ba1712b1a2fc4fd4200001be0 *tests/testthat.R
 a3d5566fc7244a5e0b0172014d8a9c01 *tests/testthat/qrtest.jpg
 67b23d0ca6582b8137415902812181c8 *tests/testthat/test-qr_code.R
-59ba87a0451abc9b8a3a08130762d3cd *tools/winlibs.R
+1dc0283353f4f3de6124a9205044d2ef *tools/winlibs.R
