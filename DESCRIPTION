@@ -1,7 +1,7 @@
 Package: opencv
 Type: Package
 Title: Bindings to 'OpenCV' Computer Vision Library
-Version: 0.5.2
+Version: 0.6.0
 Authors@R: c(
     person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroenooms@gmail.com", 
       comment = c(ORCID = "0000-0002-4035-0289")),
@@ -10,7 +10,7 @@ Description: Exposes some of the available 'OpenCV' <https://opencv.org/> algori
     such as a QR code scanner, and edge, body or face detection. These can either be 
     applied to analyze static images, or to filter live video footage from a camera device.
 License: MIT + file LICENSE
-SystemRequirements: OpenCV 3 or newer: libopencv-dev (Debian, Ubuntu)
+SystemRequirements: OpenCV 4 or newer: libopencv-dev (Debian, Ubuntu)
         or opencv-devel (Fedora). The QR code detector requires at
         least libopencv 4.5.2.
 URL: https://docs.ropensci.org/opencv/
@@ -23,9 +23,9 @@ Encoding: UTF-8
 RoxygenNote: 7.2.3
 Config/testthat/edition: 3
 NeedsCompilation: yes
-Packaged: 2026-02-21 14:48:01 UTC; jeroen
+Packaged: 2026-09-14 14:36:05 UTC; jeroen
 Author: Jeroen Ooms [aut, cre] (ORCID: <https://orcid.org/0000-0002-4035-0289>),
   Jan Wijffels [aut]
 Maintainer: Jeroen Ooms <jeroenooms@gmail.com>
 Repository: CRAN
-Date/Publication: 2026-02-22 00:40:02 UTC
+Date/Publication: 2026-09-14 21:30:02 UTC
