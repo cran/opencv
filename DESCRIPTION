@@ -1,7 +1,7 @@
 Package: opencv
 Type: Package
 Title: Bindings to 'OpenCV' Computer Vision Library
-Version: 0.6.0
+Version: 0.6.1
 Authors@R: c(
     person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroenooms@gmail.com", 
       comment = c(ORCID = "0000-0002-4035-0289")),
@@ -23,9 +23,9 @@ Encoding: UTF-8
 RoxygenNote: 7.2.3
 Config/testthat/edition: 3
 NeedsCompilation: yes
-Packaged: 2026-09-14 14:36:05 UTC; jeroen
+Packaged: 2026-09-17 08:35:58 UTC; jeroen
 Author: Jeroen Ooms [aut, cre] (ORCID: <https://orcid.org/0000-0002-4035-0289>),
   Jan Wijffels [aut]
 Maintainer: Jeroen Ooms <jeroenooms@gmail.com>
 Repository: CRAN
-Date/Publication: 2026-09-14 21:30:02 UTC
+Date/Publication: 2026-09-17 14:40:33 UTC
